@@ -240,7 +240,7 @@ img {
 
 .aligned-list i {
     color: var(--green-bright);
-}
+} /**/
 
 .inline {
     display: inline-block;
