@@ -4,6 +4,10 @@
     line-height: 2em;
 }
 
+body {
+    font-family: "NTR",sans-serif;
+}
+
 :root {
     --dark-navy: #020c1b;
     --navy: #0a192f;
@@ -207,6 +211,7 @@ img {
     color: var(--lightest-slate);
     font-size: 46px;
     font-weight: 400;
+    font-weight: bold;
 }
 
 .section-header {
@@ -268,15 +273,22 @@ img {
     }
 
     .typing-container {
-        /* padding-left: 3.5em; */
-        /* width: 100%; */
+        width: 100%;
         text-align: center;
+        display: inline-block;
         font-size: .56em;
+    }
+
+    .typing-container h1 {
+        display: inline-block;
     }
     
     .typing {
         width: 100%;
+        display: flex;
         text-align: center;
+        justify-content: center;
+        /* display: inline-flex; */
     }
 
     .head-move h3 {
@@ -337,9 +349,9 @@ img {
     .section-title {
         width: 100%;
         float: left;
-        text-align: center;
+        text-align: left;
         font-size: 1.8em;
-        padding-right: 7.5em;
+        padding-left: .3em;
         padding-bottom: 1em;
     }
 
