@@ -271,10 +271,14 @@ img {
         width: 100%;
     }
 
-    .typing-container {
+    .head-move {
         width: 100%;
         text-align: center;
+    }
+
+    .typing-container {
         display: inline-block;
+        text-align: center;
         font-size: .56em;
     }
 
@@ -284,10 +288,14 @@ img {
     
     .typing {
         width: 100%;
-        display: flex;
         text-align: center;
-        justify-content: center;
-        /* display: inline-flex; */
+        overflow: hidden;
+        animation: typing-animation 2s steps(15),
+        cursor 2s linear infinite alternate;
+    }
+
+    .typing-container:after {
+        content: none;
     }
 
     .head-move h3 {
