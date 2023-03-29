@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "NTR",sans-serif;
+    font: "NTR",sans-serif;
 }
 
 :root {
@@ -207,7 +207,6 @@ img {
 }
 
 .section-title {
-    font-family: "NTR",sans-serif;
     color: var(--lightest-slate);
     font-size: 46px;
     font-weight: 400;
@@ -315,10 +314,6 @@ img {
         text-align: center;
     }
 
-    img {
-        display: none;
-    }
-
     section#about {
         width: 100%;
         text-align: center;
@@ -332,9 +327,13 @@ img {
 
     .about-left {
         padding: initial;
-        text-align: center;
+        text-align: left;
         padding-right: initial;
         padding-top: initial;
+    }
+
+    .list-about {
+        text-align: center;
     }
 
     .section-header {
@@ -360,4 +359,15 @@ img {
         padding-left: .5em;
     }
 
+    .image-container {
+        display: flex; /* This tells the browser that the div is the parent container and the image is a flex item*/
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    img {
+        width: 60%;
+        /* adjusts the height of the image. */
+        margin-top: -3em; 
+    }
 }
