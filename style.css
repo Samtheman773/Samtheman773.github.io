@@ -163,6 +163,10 @@ section#portfolio {
     padding-left: 3.5em;
 }
 
+.social-mobile {
+    display: none;
+}
+
 .about-container {
     height: 100%; /*This results that the container takes up the whole section of the page*/
     width: 100%;
@@ -264,10 +268,6 @@ img {
     }
 
     section#home {
-        width: 100%;
-    }
-
-    .heading-container {
         width: 100%;
     }
 
