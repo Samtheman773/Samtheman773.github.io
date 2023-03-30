@@ -8,6 +8,54 @@ body {
     font: "NTR",sans-serif;
 }
 
+/*
+
+Fade animation: *************************************************
+
+*/
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+/*********************************************************/
+
+
 :root {
     --dark-navy: #020c1b;
     --navy: #0a192f;
@@ -321,6 +369,15 @@ img {
     .menu-button {
         text-align: center;
     }
+
+    /* Where i left off */
+
+    /* .social-mobile {
+        width: 100%;
+        text-align: center;
+    } */
+
+    /********************************************************** About Section **************************/
 
     section#about {
         width: 100%;
