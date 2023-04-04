@@ -98,10 +98,6 @@ section#portfolio {
 
 .container {
     width: 100%;
-    
-    /*CSS Smooth Scroll*/
-    overflow-y: scroll;
-    scroll-behavior: smooth;
 }
 
 .nav-container-main {
@@ -224,12 +220,21 @@ section#portfolio {
     overflow: hidden;
 }
 
-.about-column {
+.about-column-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 70%;
     float: left;
+    box-sizing: border-box;
+}
+
+.about-column-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    float: center;
     box-sizing: border-box;
 }
 
@@ -253,7 +258,7 @@ section#portfolio {
 
 img {
     display: block;
-    width: 30%;
+    width: 80%;
     margin-bottom: 20px;
     padding-top: 100px;
 }
@@ -384,11 +389,12 @@ img {
         text-align: center;
     }
 
-    .about-column {
+    .about-column-1 {
         display: initial;
         width: 100%;
         padding: initial;
     }
+
 
     .about-left {
         padding: initial;
@@ -431,9 +437,19 @@ img {
         align-items: flex-start;
     }
 
+    .about-column-2 {
+        display: block;
+    }
+
+    .headshot-mobile {
+        display: initial;
+        display: inline-block;
+        width: 100%;
+        justify-content: center;
+    }
+
     img {
         width: 60%;
-        /* adjusts the height of the image. */
-        margin-top: -5em; 
+        margin: auto;
     }
 }
