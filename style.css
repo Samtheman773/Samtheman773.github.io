@@ -257,10 +257,14 @@ section#portfolio {
 }
 
 img {
-    display: block;
+    /* display: block; */
     width: 80%;
     margin-bottom: 20px;
     padding-top: 100px;
+}
+
+.headshot-mobile {
+    display: none;
 }
 
 .section-title {
@@ -443,14 +447,11 @@ img {
 
     .headshot-mobile {
         display: initial;
-        /* display: inline-block; */
         width: 100%;
-        justify-content: center;
     }
 
     img {
-        display: initial;
-        width: 60%;
-        margin: auto;
+        width: 70%;
+        margin: -5em auto 0;
     }
 }
