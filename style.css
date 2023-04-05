@@ -443,12 +443,13 @@ img {
 
     .headshot-mobile {
         display: initial;
-        display: inline-block;
+        /* display: inline-block; */
         width: 100%;
         justify-content: center;
     }
 
     img {
+        display: initial;
         width: 60%;
         margin: auto;
     }
