@@ -12,7 +12,7 @@
     --green-tint: rgba(100,255,218,0.1);
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -21,11 +21,71 @@ body {
     color: var(--white);
 }
 
+i {
+    font-size: 22px;
+}
+
+/**************************** Resume Page ***************************/
+
+/********** NAV BAR ***********/
+
 nav {
+    /* position: fixed; */
     width: 100%;
     height: 10%;
 }
 
-i {
-    font-size: 22px;
+.return-main {
+    display: flex;
+    align-items: flex-start;
+}
+
+.return {
+    display: flex;
+    border: none;
+    background-color: var(--light-navy);
+    color: var(--white);
+}
+
+.return:hover {
+    opacity: 20%;
+}
+
+.return-title {
+    margin-left: 15px;
+}
+
+/******************************/
+
+
+
+
+
+/******** MAIN ****************/
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-title {
+    width: 100%;
+    height: 20%;
+    align-items: center;
+}
+
+.resume-box {
+    display: flex;
+    width: 75%;
+    height: 80%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.resume-box iframe {
+    width: 100%;
+    height: 100%;
+    background-color: var(--lightest-slate);
 }
