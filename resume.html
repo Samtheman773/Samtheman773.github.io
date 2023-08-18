@@ -6,31 +6,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
         <link rel="stylesheet" href="resume-style.css">
         <link rel="icon" href="husky1.png" type="image/icon type">
         <title>Resume - Sam Alvizo</title>
     </head>
     <body>
-        <nav class="return-main">
-            <button class="return" onclick="history.back()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-rewind" viewBox="0 0 16 16">
-                    <path d="M9.196 8 15 4.633v6.734L9.196 8Zm-.792-.696a.802.802 0 0 0 0 1.392l6.363 3.692c.52.302 1.233-.043 1.233-.696V4.308c0-.653-.713-.998-1.233-.696L8.404 7.304Z"/>
-                    <path d="M1.196 8 7 4.633v6.734L1.196 8Zm-.792-.696a.802.802 0 0 0 0 1.392l6.363 3.692c.52.302 1.233-.043 1.233-.696V4.308c0-.653-.713-.998-1.233-.696L.404 7.304Z"/>
-                </svg>
-                <h2 class="return-title">Home</h2>
-            </button>
+        <nav class="return-nav">
+            <ul>
+                <li><a href="index.html">&lt/Home&gt</a></li>
+                <li><a href="index.html/#about">&lt/About&gt</a></li>
+                <li><a href="">&lt/Projects&gt</a></li>
+                <li><a class="active">&lt/Resume&gt</a></li>
+            </ul>
+
+            <div id="nav-title">
+                <h3>Samuel Alvizo</h3>
+            </div>
+
+            <div id="socials-title">
+                <a href="https://www.instagram.com/samyis_me/"><i class="bi bi-instagram" style="font-size: 22px"></i></a>
+                <a href="https://github.com/Samtheman773"><i class="bi bi-github" style="font-size: 22px"></i></a>
+                <a href="https://www.linkedin.com/in/samuel-alvizo-cs/"><i class="bi bi-linkedin" style="font-size: 22px"></i></a>
+            </div>
         </nav>
 
         <div class="main">
             <div class="page-title">
                 <h1>Resume</h1>
             </div>
+            <div class="download-sec">
+                <a href="SamAlvizo-Resume.pdf" download="SamAlvizo-Resume.pdf"><button>Download PDF</button></a>
+            </div>
             <div class="resume-box">
-                <iframe src="https://myunt-my.sharepoint.com/personal/samuelalvizo_my_unt_edu/_layouts/15/embed.aspx?UniqueId=32cfda22-57b9-4c39-8e61-79f034cc068e" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Resume-july2023.docx"></iframe>
+                <iframe src="https://myunt-my.sharepoint.com/personal/samuelalvizo_my_unt_edu/_layouts/15/embed.aspx?UniqueId=32cfda22-57b9-4c39-8e61-79f034cc068e"></iframe>
             </div>
         </div>
-        <footer>
-            <p>@ Samuel Alvizo</p>
-        </footer>
+        <div class="bottom">
+            <footer>
+                <p>@ Samuel Alvizo</p>
+            </footer>
+        </div>
     </body>
 </html>

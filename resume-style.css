@@ -32,27 +32,62 @@ i {
 nav {
     /* position: fixed; */
     width: 100%;
-    height: 10%;
+    height: 8%;
+    background-color: var(--navy);
+    color: var(--green-bright);
+    position: fixed;
 }
 
-.return-main {
+.return-nav {
     display: flex;
     align-items: flex-start;
 }
 
-.return {
+.return-nav > * {
+    width: calc(100% / 3);
+}
+
+.return-nav ul {
+    height: 100%;
     display: flex;
-    border: none;
-    background-color: var(--light-navy);
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.return-nav li {
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.return-nav li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.return-nav li a.active {
+    color: var(--light-slate)
+}
+
+.return-nav li a:hover {
     color: var(--white);
 }
 
-.return:hover {
-    opacity: 20%;
+
+#nav-title {
+    text-align: center;
+    margin: auto;
 }
 
-.return-title {
-    margin-left: 15px;
+#socials-title {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 /******************************/
@@ -65,21 +100,54 @@ nav {
 
 .main {
     width: 100%;
-    height: 100%;
+    height: 1100px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .page-title {
+    display: flex; /* Add this */
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    margin-top: 80px;
     width: 100%;
     height: 20%;
+}
+
+.page-title h1 {
+    font-size: 45px;
+}
+
+/******* Download Button *******/
+
+.download-sec {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
     align-items: center;
 }
+
+.download-sec button {
+    border: none;
+    padding: 8px 30px 8px 30px;
+             /* top     right      bottom  left */
+    border-radius: 20px;
+    background-color: var(--dark-navy);
+    color: var(--white);
+}
+
+.download-sec button:hover {
+    background-color: var(--slate);
+}
+
+/******************************/
 
 .resume-box {
     display: flex;
     width: 75%;
-    height: 80%;
+    height: 150%;
     justify-content: center;
     margin: 0 auto;
 }
@@ -88,4 +156,14 @@ nav {
     width: 100%;
     height: 100%;
     background-color: var(--lightest-slate);
+}
+
+/********** Footer **********/
+
+.bottom {
+    padding-top: 25px;
+    display: flex;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
 }
