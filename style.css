@@ -245,10 +245,10 @@ section#portfolio {
 }
 
 .about-left {
-    padding-left: 17em;
+    padding-left: 7em;
     text-align: left;
     padding-right: 8em;
-    padding-top: 3em;
+    padding-top: 8em;
 }
 
 /*This might not be working*/
@@ -260,7 +260,7 @@ img {
     /* display: block; */
     width: 80%;
     margin-bottom: 20px;
-    padding-top: 100px;
+    padding-top: 11em;
 }
 
 .headshot-mobile {
